@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <title>Configurações</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/tela_extra_config.css">
+    </head>
+    <body>
+        <header>
+            <img src="img/perfil-de-usuario.png" alt="perfil de usuario" class="usuario">
+            <h1>
+                FinanceChef
+            </h1>
+        </header>
+        <main>
+            <h1 class="subtitulo">
+                Configurações:
+            </h1>
+
+            <form>
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome"><br><br>
+        
+                <label for="idade">Idade:</label>
+                <input type="number" id="idade" name="idade"><br><br>
+        
+                <label for="e-mail"> E-mail:</label>
+                <input type="text" id="e-mail" name="e-mail"><br><br>
+
+                <label for="celular">Celular:</label>
+                <input type="text" id="celular" name="celular"><br><br>
+        
+                <input type="submit" value="Cadastrar" class="cadastrar_">
+            </form>
+
+            <ul>
+                <li><input type="range" id="valorSelecionado" min="0" max="100" value="50"></li>
+                <li><p>Luminosidade: <span id="valorExibido">50</span></p></li>
+            </ul>
+            
+
+            <script>
+                var barraDeDeslizamento = document.getElementById("valorSelecionado");
+                var valorExibido = document.getElementById("valorExibido");
+                barraDeDeslizamento.addEventListener("input", function() {
+                valorExibido.textContent = barraDeDeslizamento.value;
+                });
+            </script>
+        </main>
+
+        <footer>
+            <a href="tela_principal.html"><img src="img/botao-home.png" alt="Botão home" class="rodape"></a>
+            <a href="tela_area_de_vendas.html"><img src="img/escrita.png" alt="Botão da área de vendas" class="rodape"></a>
+            <a href="tela_cash.html"><img src="img/cash.png" alt="Botão de finanças" class="rodape"></a>
+            <a href="tela_informativo.html" ><img src="img/ponto-de-exclamacao.png" alt="Botão do informativo" class="rodape"></a>
+            <a href='tela_extra_config.html' ><img src="img/engenharia.png" alt="Botão de configurções" class="rodape"></a>
+        </footer>
+    </body>
+</html>

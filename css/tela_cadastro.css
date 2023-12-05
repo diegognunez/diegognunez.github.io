@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Noticia+Text&display=swap');
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    min-height: 100%;
+}
+
+body {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    background-color: rgb(255, 229, 188);
+}
+
+main {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.voltar {
+    display: flex;
+    position: absolute;
+    left: 5%;
+    top: 3%;
+    height: 3rem;
+    width: 3rem;
+}
+
+.usuario_senha {
+    height: 3rem;
+    width: 3rem;
+}
+
+h1 {
+    display: flex;
+    font-size: 2rem;
+    height: 15%;
+    flex-direction: column;
+    justify-content: flex-end;
+    font-family: 'Mitr', sans-serif;
+    font-weight: bold;
+}
+
+ul {
+    display: flex;
+    height: 35%;
+    width: 80%;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+li {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+input {
+    height: 80%;
+    width: 70%;
+    border: none;
+    background-color: rgb(255, 229, 188);
+    border-bottom: .1rem solid black;
+    font-size: 1.2rem;
+}
+
+input:focus {
+    outline: none;
+}
+
+input:focus::placeholder {
+    color: transparent;
+}
+
+.pronto {
+    display: flex;
+    height: 10%;
+    width: 70%;
+    border: .1rem solid black;
+    border-radius: 1rem;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: black;
+    background-color:rgb(129, 250, 108);
+    font-family: 'Noticia Text', serif;
+}
+
+.loading {
+    position: fixed;
+}
+
+.hidden {
+    display: none;
+}

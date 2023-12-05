@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Noticia+Text&display=swap');
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    min-height: 100%;
+}
+
+body {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    background-color:  rgb(255, 229, 188);
+}
+
+header {
+    background-color:rgb(169, 231, 169); 
+    display: flex;
+    height: 4rem;
+    position: relative;
+    top: 0;
+    left: 0;
+    justify-content: center;
+    align-items: center;
+    border-bottom: .1rem solid black;
+}
+
+.usuario {
+    display: flex;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: .4rem;
+    height: 3.5rem;
+    width: 3.5rem;
+}
+
+main {
+    display: flex;
+    position: relative;
+    flex-grow: 1;
+    padding-bottom: 4rem;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+footer {
+    height: 4rem;
+    width: 100%;
+    background-color:rgb(169, 231, 169); 
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-top: .1rem solid black;
+}
+
+.rodape {
+    width: 3rem;
+    height: 3rem;
+}
+
+h1 {
+    font-size: 2rem;
+    font-family: 'Mitr', sans-serif;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 60%;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 25%;
+}
+
+.especie{
+    display: flex;
+    flex-direction: row;
+    height: 20%;
+    width: 70%;
+}
+
+input[type= submit]{
+    height: 100%;
+    width: 80%;
+}
+
+.Ganhos{
+    background-color: rgb(129, 250, 108);
+    font-family: 'Noticia Text', serif;
+    font-size: 1.2rem;
+}
+
+.Gastos{
+    background-color: rgb(255, 74, 74);
+    font-family: 'Noticia Text', serif;
+    font-size: 1.2rem;
+}
+
+li {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+label {
+    font-size: 1.2rem;
+    font-family: 'Noticia Text', serif;
+}
+
+.digitar {
+    height: 30%;
+    width: 100%;
+}
+
+.voltar {
+    display: flex;
+    position: absolute;
+    left: 5%;
+    top: 3%;
+    height: 3rem;
+    width: 3rem;
+}
+
+.subtitulo {
+    margin-top: 2.5rem;
+    font-weight: bold;
+    font-family: 'Noticia Text', serif;
+}
+
+.botoes-container {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    justify-content: space-between; /* Espaçamento igual entre os botões */
+}
+
+.botoes-container li {
+    width: 48%; /* Para deixar os botões com o mesmo tamanho */
+}
